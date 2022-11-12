@@ -1,10 +1,11 @@
-﻿Console.WriteLine("Запишите целое число ");
+﻿//Напишите программу, которая на вход принимает два числа,и выдает, какое большее
+Console.WriteLine("Запишите целое число ");
 int namberOne = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Запишите второе целое число ");
 int namberTwo = Convert.ToInt32(Console.ReadLine());
 
 if (namberOne > namberTwo)
-    Console.WriteLine("max = namberOne");
+    Console.WriteLine("max =" + namberOne);
 else
-    Console.WriteLine("max = namberTwo");
+    Console.WriteLine("max =" + namberTwo);
