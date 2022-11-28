@@ -5,14 +5,14 @@ Console.WriteLine("Какой будет размер массива? Введи
 int size = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[size];
 int count = 0;
-void FillArrayRandomNambers(int[] array, int min, int max)
+void FillArrayRandomNambers(int[] array)
 {
     for (int i=0; i < size; i++)
     {
         array[i] = new Random().Next(100, 1000);
     }
 }
-FillArrayRandomNambers(array, 100, 1000);
+FillArrayRandomNambers(array);
 void WriteArray(int[] array)
 {
     for (int i=0; i < size; i++)
