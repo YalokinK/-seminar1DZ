@@ -5,6 +5,11 @@ int rowsFirstMatrix = ReadInt("Введите колличество строк 
 int columnsFirstMatrix = ReadInt("Введите колличество столбцов первой матрицы: ");
 int rowsSecondMatrix = ReadInt("Введите колличество строк второй матрицы: ");
 int columnsSecondMatrix = ReadInt("Введите колличество столбцов второй матрицы: ");
+if (columnsFirstMatrix != rowsSecondMatrix)
+{
+    Console.WriteLine("Эти матрицы перемножить невозможно");
+    return;
+}
 int[,] matrixFirst = new int[rowsFirstMatrix, columnsFirstMatrix];
 int[,] matrixSecond = new int[rowsSecondMatrix, columnsSecondMatrix];
 Fill2DArrayRandomNambers(matrixFirst);
@@ -32,7 +37,7 @@ void Fill2DArrayRandomNambers(int[,] matrix)
     {
         for (int j=0; j<matrix.GetLength(1); j++)
         {
-            matrix[i,j] = new  Random().Next(0,10);
+            matrix[i,j] = new  Random().Next(1,10);
         }
     }
 }
