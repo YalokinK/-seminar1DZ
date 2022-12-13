@@ -11,7 +11,6 @@ int NaturalNamber(int n)
     {
          Console.Write(n + ", ");
         NaturalNamber(n-1);
-//        return 1;
     }
     return 1;
 }
